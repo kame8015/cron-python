@@ -15,3 +15,10 @@ $ pip install -r requirements.txt
 $ python sample_schedule.py 1  # every 1 second
 $ python sample_schedule.py 15  # every 15 seconds
 ```
+
+## How to run cron job with time
+
+```
+$ python sample_time.py 1  # every 1 second
+$ python sample_time.py 15  $ every 15 seconds
+```
