@@ -28,8 +28,8 @@ def __validate_args(args) -> int:
     except Exception:
         raise Exception("args must be int.")
 
-    if not pending_time > 0:
-        raise Exception("args must be greater than 0.")
+    if pending_time < 0 or 60 < pending_time:
+        raise Exception("args must be greater than 0 or less than 60.")
 
     return pending_time
 
